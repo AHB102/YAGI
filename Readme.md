@@ -46,6 +46,7 @@ Help: Typing help or -h within the YAGI prompt displays a manual page that lists
 ## Usage/Examples
 
 The YAGI tool is used via the command line interface (CLI). Users interact with the tool by entering commands and, in some cases, providing a destination IP address or domain name as input for specific functionalities.
+*More Features like DNS Management,Interface Configuration would be added in later releases 
 
 
 Perform a traceroute:
@@ -131,4 +132,4 @@ Interface: wlan0
   DNS Servers: 10.0.0.1
 
 ```
-*More Features like DNS Management,Interface Cnfiguration would be added in later releases 
+
