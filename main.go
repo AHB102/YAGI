@@ -22,7 +22,7 @@ func main() {
 			break
 		}
 
-		// Split the input into command and destination (if available)
+		
 		args := strings.Fields(input)
 		if len(args) < 1 {
 			fmt.Println("Invalid input. Usage: command [destination]")

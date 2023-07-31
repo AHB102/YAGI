@@ -66,7 +66,7 @@ over a maximum of 30 hops:
 Trace complete.
 
 ```
-IP addresses a removed for privacy reasons 
+IP addresses are removed for privacy reasons 
 
 Reverse DNS lookup: 
 ```Javascript 
