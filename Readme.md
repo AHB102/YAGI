@@ -129,3 +129,6 @@ Interface: wlan0
   Subnet Mask: 255.255.255.0
   Default Gateway: 10.0.0.1
   DNS Servers: 10.0.0.1
+
+
+*More Features like DNS Management,Interface Cnfiguration would be added in later releases 
