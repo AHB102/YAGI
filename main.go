@@ -52,7 +52,7 @@ func main() {
 			destination := args[1]
 			names, err := core.ReverseDNS(destination)
 			if err != nil {
-				fmt.Printf("Error performing reverse DNS lookup:", err)
+				fmt.Println("Error performing reverse DNS lookup:", err)
 				continue
 			}
 
@@ -79,25 +79,25 @@ func main() {
 			case "release":
 				err := core.ReleaseDHCPLease()
 				if err != nil {
-					fmt.Printf("Failed to release DHCP lease:", err)
+					fmt.Println("Failed to release DHCP lease:", err)
 				} else {
-					fmt.Printf("DHCP lease released successfully.")
+					fmt.Printf("DHCP lease released successfully.\n")
 				}
 
 			case "renew":
 				err := core.RenewDHCPLease()
 				if err != nil {
-					fmt.Printf("Failed to renew DHCP lease:", err)
+					fmt.Println("Failed to renew DHCP lease:", err)
 				} else {
-					fmt.Printf("DHCP lease renewed successfully.")
+					fmt.Printf("DHCP lease renewed successfully.\n")
 				}
 
 			case "flush":
 				err := core.FlushDHCPLease()
 				if err != nil {
-					fmt.Printf("Failed to flush DHCP lease:", err)
+					fmt.Println("Failed to flush DHCP lease:", err)
 				} else {
-					fmt.Printf("DHCP lease flushed successfully.")
+					fmt.Printf("DHCP lease flushed successfully.\n")
 				}
 
 			default:
@@ -125,14 +125,14 @@ func showHelp() {
 	fmt.Println("YAGI - Yet Another Go-based CLI Tool")
 	fmt.Println("Usage: command [destination]")
 	fmt.Println("Available commands:")
-	fmt.Println("  traceroute destination    - Perform a traceroute to the specified destination.")
-	fmt.Println("  reverseDNS destination    - Perform a reverse DNS lookup for the given IP address.")
-	fmt.Println("  bandwidth_testing         - Perform bandwidth testing.")
-	fmt.Println("  dhcpManagement -subcommand [release|renew|flush] - Manage DHCP leases.")
-	fmt.Println("  networktopology           - Display the network topology. * represents root")
-	fmt.Println("  networkinfo               - Print network information.")
-	fmt.Println("  portscanning destination  - Perform a port scan on the specified destination.")
-	fmt.Println("  help, -h                  - Show this help message.")
-	fmt.Println("  exit                      - Exit the program.")
+	fmt.Println("  tr   	    							   - Perform a traceroute to the specified destination.")
+	fmt.Println("  rDNS         							   - Perform a reverse DNS lookup for the given IP address.")
+	fmt.Println("  bwidth       							   - Perform bandwidth testing.")
+	fmt.Println("  DHCPManage-subcommand [release|renew|flush] - Manage DHCP leases.")
+	fmt.Println("  nettopo      							   - Display the network topology. * represents root")
+	fmt.Println("  netinfo      							   - Print network information.")
+	fmt.Println("  portscan  								   - Perform a port scan on the specified destination.")
+	fmt.Println("  help, -h     							   - Show this help message.")
+	fmt.Println("  exit         							   - Exit the program.")
 
 }
